@@ -1,3 +1,9 @@
-<form [formGroup]="form">
-{{form.value.a}} + {{form.value.b}} = 
-</form>
+<div class="m-5">
+    <form [formGroup]="form">
+        {{a}} + {{b}} = <input type="number" class="border border-black pl-2 focus:outline-none"
+            formControlName="answer">
+    </form>
+    <div>form is valid : {{form.valid}}</div>
+    <div>form value : {{form.value | json}}</div>
+    <div>form group error : {{form.errors | json}}</div>
+</div>
