@@ -39,6 +39,6 @@ export class EquationComponent implements OnInit {
     })
   }
   randomnumber() {
-    return Math.floor(Math.random() * 20)
+    return Math.floor(Math.random() * 40)
   }
 }
